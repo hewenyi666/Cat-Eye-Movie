@@ -33,7 +33,7 @@ def get_file_name(soup):#获取电影名称
         file_name.append(aa.string)
     return file_name
 def save_to_excel(file_name,actor_name,releasetime,score):#保存数据至Excel中
-    workbook = xlsxwriter.Workbook("F:\\网络爬虫\\maoyan.xlsx")
+    workbook = xlsxwriter.Workbook("F:\\maoyan.xlsx")
     worksheet = workbook.add_worksheet('爬取的数据')
     head = ['排名', '电影名称', '演员', '上映时间', '评分']
     worksheet.write_row('A1', head)
